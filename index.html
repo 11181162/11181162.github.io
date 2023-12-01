@@ -1,41 +1,50 @@
 <div id="quiz"></div>
 <button id="submit">Get Results</button>
 <div id="results"></div>
- <script>   
+ <script>  
  
 
 var myQuestions = [
+
   {
-    question: "How much did robert pattinson get paid for the twighlight series?"
-    answers: {
+    question: "How much did robert pattinson get paid for the twighlight series?",
+    answers:     {
       a: '$2.5 Million',
       b: '$15 Million',
       c: '$2million',
       d: '$7million'
-             },
+           },
     correctAnswer: 'a'
+
   },
   {
-    question: "In What Year Was Twighlight Created?"
-    answers: {
+    question: "In What Year Was Twighlight Created??",
+    answers:     {
       a: '2008',
       b: '2011',
       c: '2012',
-    d: '2006'
-             },
+        d: '2006'
+           },
     correctAnswer: 'a'
+
   },
-  {
-question: 'Who was jacobs soulmate in the twighlight series?'
-  answers: {
-  a:'Renesmee',
+
+ {
+    question: "Who was jacobs soulmate in the twighlight series?",
+    answers:     {
+       a:'Renesmee',
   b:'Bella',
   c:'Leah',
   d:'Irina'
-   },
-correct answer: 'a'
+           },
+    correctAnswer: 'a'
+
   }
+
+
   ];
+
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -49,8 +58,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     var output = [];
     var answers;
 
-     for(var i=0; i<questions.length; i++){     
-           answers = [];     
+     for(var i=0; i<questions.length; i++){    
+           answers = [];    
 
       for(letter in questions[i].answers){        
         answers.push(
